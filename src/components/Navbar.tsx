@@ -49,8 +49,8 @@ const Navbar = () => {
               to="/"
               className="text-xl font-semibold text-foreground flex items-center"
             >
-              <span className="text-primary">AI</span>
-              <span className="ml-1">Agency</span>
+              <span className="text-primary">Growth</span>
+              <span className="ml-1">Bots</span>
             </Link>
           </div>
 

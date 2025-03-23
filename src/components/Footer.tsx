@@ -9,8 +9,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-8">
           <div>
             <Link to="/" className="text-xl font-semibold text-foreground flex items-center mb-4">
-              <span className="text-primary">AI</span>
-              <span className="ml-1">Agency</span>
+              <span className="text-primary">Growth</span>
+              <span className="ml-1">Bots</span>
             </Link>
             <p className="text-sm text-foreground/70 mb-6 max-w-xs">
               Elevating businesses with next-generation AI solutions that transform customer experiences and optimize workflows.
@@ -46,12 +46,12 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/services" className="text-sm text-foreground/70 hover:text-primary transition-colors">
-                  Workflow Automation
+                  WhatsApp and Instagram Bots
                 </Link>
               </li>
               <li>
                 <Link to="/services" className="text-sm text-foreground/70 hover:text-primary transition-colors">
-                  Custom AI Solutions
+                  Workflow Automation
                 </Link>
               </li>
             </ul>
@@ -93,20 +93,20 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex">
                 <Mail className="h-5 w-5 text-primary mr-3 flex-shrink-0" />
-                <a href="mailto:contact@aiagency.com" className="text-sm text-foreground/70 hover:text-primary transition-colors">
-                  contact@aiagency.com
+                <a href="mailto:contact@growthbots.in" className="text-sm text-foreground/70 hover:text-primary transition-colors">
+                  contact@growthbots.in
                 </a>
               </li>
               <li className="flex">
                 <Phone className="h-5 w-5 text-primary mr-3 flex-shrink-0" />
-                <a href="tel:+1234567890" className="text-sm text-foreground/70 hover:text-primary transition-colors">
-                  +1 (234) 567-890
+                <a href="tel:+919566046786" className="text-sm text-foreground/70 hover:text-primary transition-colors">
+                  +91 9566046786
                 </a>
               </li>
               <li className="flex">
                 <MapPin className="h-5 w-5 text-primary mr-3 flex-shrink-0" />
                 <p className="text-sm text-foreground/70">
-                  123 AI Avenue, Tech District<br />San Francisco, CA 94105
+                  Chennai, India
                 </p>
               </li>
             </ul>
@@ -115,7 +115,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-border/60">
           <p className="text-center text-sm text-foreground/60">
-            © {new Date().getFullYear()} AI Agency. All rights reserved.
+            © {new Date().getFullYear()} GrowthBots. All rights reserved.
           </p>
         </div>
       </div>

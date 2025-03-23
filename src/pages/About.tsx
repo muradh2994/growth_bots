@@ -5,37 +5,6 @@ import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
 const About = () => {
-  const team = [
-    {
-      name: "Alexandra Chen",
-      role: "CEO & AI Strategist",
-      bio: "With over 15 years in AI and machine learning, Alexandra leads our vision to make advanced AI accessible to businesses of all sizes.",
-      initial: "A",
-      delay: 0
-    },
-    {
-      name: "Marcus Rodriguez",
-      role: "CTO",
-      bio: "Marcus brings 12+ years of technical expertise in developing scalable AI solutions for enterprise clients across various industries.",
-      initial: "M",
-      delay: 100
-    },
-    {
-      name: "Sophia Williams",
-      role: "Head of AI Voice Technologies",
-      bio: "Sophia specializes in natural language processing and voice recognition systems with a focus on creating human-like conversational experiences.",
-      initial: "S",
-      delay: 200
-    },
-    {
-      name: "David Park",
-      role: "Lead AI Solutions Architect",
-      bio: "David excels at designing custom AI implementations that integrate seamlessly with existing business systems and processes.",
-      initial: "D",
-      delay: 300
-    }
-  ];
-
   const values = [
     {
       title: "Innovation",
@@ -95,7 +64,7 @@ const About = () => {
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Story</h2>
                 <div className="space-y-4 text-lg text-foreground/80">
                   <p>
-                    Founded in 2018, AI Agency began with a simple mission: to make advanced artificial intelligence accessible to businesses of all sizes. What started as a small team of AI enthusiasts has grown into a leading provider of innovative AI solutions across multiple industries.
+                    Founded in 2024, GrowthBots began with a simple mission: to make advanced artificial intelligence accessible to businesses of all sizes. What started as a small team of AI enthusiasts has grown into a leading provider of innovative AI solutions across multiple industries.
                   </p>
                   <p>
                     We recognized early on that while large enterprises had the resources to implement sophisticated AI systems, small and medium-sized businesses were often left behind. Our goal was to bridge this gap by developing AI solutions that were powerful yet accessible.
@@ -151,35 +120,6 @@ const About = () => {
           </div>
         </section>
 
-        {/* Team Section */}
-        <section className="py-16 md:py-24 relative overflow-hidden">
-          <div className="container-custom">
-            <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-up">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Meet Our Team</h2>
-              <p className="text-lg text-foreground/80 text-balance">
-                Our diverse team of AI experts brings together decades of experience in machine learning, natural language processing, and business transformation.
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {team.map((member, index) => (
-                <div 
-                  key={index} 
-                  className="glass-card rounded-xl p-6 text-center animate-fade-up" 
-                  style={{ animationDelay: `${member.delay}ms` }}
-                >
-                  <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-2xl mx-auto mb-4">
-                    {member.initial}
-                  </div>
-                  <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
-                  <p className="text-primary/80 text-sm mb-4">{member.role}</p>
-                  <p className="text-foreground/80 text-sm text-balance">{member.bio}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* Contact Section */}
         <section className="py-16 md:py-24 bg-secondary/30 relative overflow-hidden">
           <div className="absolute top-1/4 -left-20 w-72 h-72 bg-primary/5 rounded-full filter blur-3xl"></div>
@@ -199,8 +139,8 @@ const About = () => {
                   <Mail className="h-8 w-8" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Email Us</h3>
-                <a href="mailto:contact@aiagency.com" className="text-foreground/80 hover:text-primary transition-colors">
-                  contact@aiagency.com
+                <a href="mailto:contact@growthbots.in" className="text-foreground/80 hover:text-primary transition-colors">
+                  contact@growthbots.in
                 </a>
               </div>
               
@@ -209,8 +149,8 @@ const About = () => {
                   <Phone className="h-8 w-8" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Call Us</h3>
-                <a href="tel:+1234567890" className="text-foreground/80 hover:text-primary transition-colors">
-                  +1 (234) 567-890
+                <a href="tel:+919566046786" className="text-foreground/80 hover:text-primary transition-colors">
+                  +91 9566046786
                 </a>
               </div>
               
@@ -220,7 +160,7 @@ const About = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Visit Us</h3>
                 <p className="text-foreground/80">
-                  123 AI Avenue, Tech District<br />San Francisco, CA 94105
+                  Chennai, India
                 </p>
               </div>
             </div>

@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { Mic, MessageSquare, Workflow, ArrowRight, CheckCircle, Users, BarChart3, Clock } from "lucide-react";
+import { Mic, MessageSquare, Workflow, ArrowRight, CheckCircle, Users, BarChart3, Clock, Instagram, MessageCircle } from "lucide-react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import ServiceCard from "../components/ServiceCard";
@@ -34,6 +34,19 @@ const Index = () => {
       ],
       href: "/services",
       delay: 100
+    },
+    {
+      title: "WhatsApp and Instagram Bots",
+      description: "Powerful bots for social platforms to automate marketing, support, lead generation, and appointment booking.",
+      icon: <MessageCircle className="h-6 w-6" />,
+      features: [
+        "Bulk Marketing",
+        "Customer Support",
+        "Lead Generation",
+        "Appointment Booking"
+      ],
+      href: "/services",
+      delay: 150
     },
     {
       title: "Workflow Automation",
@@ -94,7 +107,7 @@ const Index = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
               {services.map((service, index) => (
                 <ServiceCard key={index} {...service} />
               ))}

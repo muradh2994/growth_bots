@@ -1,5 +1,5 @@
 
-import { Mic, MessageSquare, Workflow, Building, Hotel, ShoppingBag, ArrowRight, CheckCircle } from "lucide-react";
+import { Mic, MessageSquare, Workflow, Building, Hotel, ShoppingBag, ArrowRight, CheckCircle, MessageCircle, Instagram, ShoppingCart } from "lucide-react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
@@ -35,6 +35,21 @@ const Services = () => {
       ],
       image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       cta: "Explore Chatbot Solutions"
+    },
+    {
+      id: "social-bots",
+      title: "WhatsApp and Instagram Bots",
+      description: "Powerful bots for social platforms to help businesses automate marketing campaigns, support, lead generation, and appointment scheduling.",
+      icon: <MessageCircle className="h-8 w-8" />,
+      benefits: [
+        "Engage customers on their preferred messaging platforms",
+        "Automate bulk marketing campaigns with personalization",
+        "Provide 24/7 customer support with quick response times",
+        "Generate and qualify leads automatically",
+        "Streamline appointment booking and reminders"
+      ],
+      image: "https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      cta: "Discover Social Bots"
     },
     {
       id: "workflow",

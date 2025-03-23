@@ -22,8 +22,8 @@ const Hero = () => {
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-balance">
                 <span className="block">Transform Your Business with</span>
-                <span className="text-primary"> Intelligent AI</span>
-                <span> Solutions</span>
+                <span className="text-primary"> AI Agents</span>
+                <span> in 30 Days</span>
               </h1>
               <p className="text-lg md:text-xl text-foreground/80 max-w-2xl text-balance">
                 Elevate customer engagement and streamline operations with our cutting-edge AI Voice Agents, Chatbots, and Workflow Automation solutions.
