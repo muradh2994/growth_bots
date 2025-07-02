@@ -31,15 +31,44 @@ const Booking = () => {
         {/* Booking Section */}
         <section className="py-12 md:py-16 relative overflow-hidden">
           <div className="container-custom">
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-7xl mx-auto">
               <div className="glass-card rounded-3xl p-8 shadow-lg animate-fade-up">
                 <h2 className="text-2xl font-bold mb-6 text-center">Schedule Your Consultation</h2>
                 <p className="text-foreground/80 text-center mb-8">
                   Book a 30-minute consultation with our AI experts to discuss your business needs and explore tailored solutions.
                 </p>
                 
-                {/* Calendly inline widget */}
-                <div className="calendly-inline-widget" data-url="https://calendly.com/mohamedmuradh07/30min" style={{minWidth: '320px', height: '700px'}}></div>
+                {/* Two-column layout for desktop, stacked for mobile */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                  {/* YouTube Video */}
+                  <div className="w-full">
+                    <div className="relative w-full" style={{ paddingBottom: '56.25%' /* 16:9 aspect ratio */ }}>
+                      <iframe 
+                        className="absolute top-0 left-0 w-full h-full rounded-lg"
+                        src="https://www.youtube-nocookie.com/embed/cTcb7BGh_UQ?si=oxhz6BxMRpNFAwLX" 
+                        title="YouTube video player" 
+                        frameBorder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerPolicy="strict-origin-when-cross-origin" 
+                        allowFullScreen
+                      />
+                    </div>
+                  </div>
+                  
+                  {/* Calendly Widget */}
+                  <div className="w-full">
+                    <div 
+                      className="calendly-inline-widget w-full" 
+                      data-url="https://calendly.com/mohamedmuradh07/30min"
+                      style={{ 
+                        minWidth: '320px', 
+                        height: '700px',
+                        border: 'none',
+                        overflow: 'visible'
+                      }}
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
