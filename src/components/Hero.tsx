@@ -1,10 +1,7 @@
-
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-
 const Hero = () => {
-  return (
-    <div className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+  return <div className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 -left-20 w-72 h-72 bg-primary/10 rounded-full filter blur-3xl animate-pulse-subtle"></div>
@@ -16,11 +13,11 @@ const Hero = () => {
           <div className="max-w-3xl">
             <div className="space-y-6 animate-fade-up">
               <div className="inline-block">
-                <span className="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary animate-fade-in">
+                <span className="inline-flex items-center px-3 py-1 font-medium rounded-full bg-primary/10 text-primary animate-fade-in text-lg">
                   Next-Gen AI Solutions
                 </span>
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-balance">
+              <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-balance md:text-3xl">
                 <span className="block">Transform Your Business with</span>
                 <span className="text-primary"> AI Agents</span>
                 <span> in 30 Days</span>
@@ -77,8 +74,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Hero;
